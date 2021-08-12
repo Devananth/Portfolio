@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blogs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+    <title>Blog | Create your first web app</title>
+</head>
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <span style="font-size:1.5rem; font-weight: bold; padding-top : .5rem;"><h1>DA</h1></span>
+            <ul>
+                <li class="links"><a href="index.html">Home</a></li>
+                <li class="links"><a href="index.html">About</a></li>
+                <li class="links"><a href="index.html">Skills</a></li>
+                <li class="links"><a href="projects.html">Projects</a></li>
+                <li class="links"><a href="blogs.html">Blogs</a></li>
+                <li class="links"><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="blog">
+
+        <div class="blog-title">
+            <h3 style="margin : 0;">Create your first web app using HTML , CSS and Javascript</h3>
+            <span><i>Published on Aug 12, 2021<br>
+                3 min read</i></span>
+        </div>
+
+        <div class="blog-content">
+            <br>
+            <p>
+                If you are curious to create your first web application , then this blog is for you.
+                <br><br>
+                <b>Note :</b> This blog assumes that you have some basic understanding of websites and web applications.
+                <br><Br>
+                <b>Lets get started.</b>
+                <br>
+            </p>
+        </div>
+
+        <div>
+            <h3>Steps involved in creating a web app</h3>
+            Every applications in the tech industry is created by applying these steps:
+            <br>
+
+            <h4 class="center">Input => Process => Output</h4>
+
+            <p>This is the core idea of making any application in the tech industry.
+            <br><br>
+            Firstly you will be getting input from the client and you will process those inputs according to your logic then you would deliver the output to the client.</p>
+            <br>
+        </div>
+
+        <div>
+            <h3>What we will be building in this blog ?</h3>
+            
+            <div class="center"><img src="/Images Blog1/firstImage.jfif"></div>
+            
+
+            <p>This is a simple web app which gets two inputs from the client and performs the calculation according to operators clicked by the client and displays the result to the client. Let's name it as a <b>Calculation app</b></p>
+
+            <br>
+        </div>
+
+        <div>
+
+            <h3> Breaking down the idea</h3>
+
+            <h3>Input</h3>
+
+            <div class="center"><img src="/Images Blog1/operands.jfif"></div>
+
+            <p>First we need to get two values(<b>ie.operands</b>) from the client to perform the calculation. By using input tag we will be getting inputs from the client.
+            <br><br>
+            Next after getting required operands , what we need is <b>operators</b> to perform calculation. So we will be displaying the operators. So that when the user clicks on the operator it will display the calculated result.</p>
+            <br>            
+            
+            <div class="center"><img src="/Images Blog1/operators.jfif"></div>
+
+            <p>After receiving all the required inputs to perform a calculation , we will display the output to the client. But where ? Inorder to , display the result we will create a <b>&lt;div&gt;</b>.</p>
+            
+            <div class="center"><img src="/Images Blog1/result.jfif"></div>
+
+            <p>Now we have completed all the HTML parts that are necessary get the required inputs from the user. And add some stylings using <b>CSS</b> to make the app look good.
+            <br><br>
+            Here is how the my app looks after doing some styling 👇
+            </p>
+
+            <div class="center"><img src="/Images Blog1/html.jfif"></div>
+
+            <p>Now if the client enters the necessary values and click on the operators the app does not show any output , Why ? Because we have'nt done any <b>processing</b> part yet.</p>
+            <br>
+            
+            <h3>Processing</h3>
+
+            <p>Now for processing the inputs entered by the user we will be using Javascript language.
+            <br><br>
+
+            Firstly , we need to save the HTML elements in a JS variable . So that it will be easy for us to process. So inorder to select the HTML elements there are many ways , I will be using <b>querySelector()</b> for selecting HTML elements.
+            <br><br>
+            
+            Incase if you are not aware of querySelector() , check this out : <button class="btn"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">Read here</a></button>
+            </p>
+
+            <div class="center"><img src="/Images Blog1/jsOne.jfif"></div>
+
+            Now , we need to start implementing our logic
+            <br><br>
+
+            <p>If the user clicks add button , then we need to perform addition operation. How can we do that ? By adding <b>eventListeners()</b> to the buttons. We will add <b>click</b> event to the buttons so that when the client clicks the button respective <b>eventHandler</b> is called and respective calculation is done inside the eventHandler.
+            <br><br>
+          
+            And we need make sure that both the operands are given correctly else we will display an error.
+            <br><br>
+
+            If you are not aware of eventListeners() , check this out : 
+            <button class="btn"><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventListener">Read here</a></button></p>
+            
+            <div class="center"><img src="/Images Blog1/eventList.jfif"></div>
+
+            <p>In the above code , we have added eventListener() for add button. So when the client clicks the add button. The respective eventHandler will be called and then we will check whether the operands are valid or not . If it is valid then we will perform addition operation else we will display an error. Similarly , do this for all the operators.</p>
+
+            <br>
+
+            <h3>Output</h3>
+            
+            <p>Now after done with processing , we need display the output to the client . This can also be done in many ways. Here , we will be using <b>innerText</b> to store result in the HTML element.</p>
+
+            <div class="center"><img src="/Images Blog1/opt.jfif"></div>
+
+            <p>That's it ! Congratulate yourself for taking the first step and creating the simple web app.
+            <br><br>
+            In case , if you're stuck at some where feel free to check out my repository : <button class="primary-btn btn"><a href="https://github.com/Devananth/Blogs">Repo</a></button></p>
+
+        </div>
+    </div>
+
+    <div class="center">© 2021 Devananth Nkl's Blog</div>
+</body>
+</html>
