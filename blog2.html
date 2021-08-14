@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blogs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+    <title>Blog | Arrays in Javascript</title>
+</head>
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <span style="font-size:1.5rem; font-weight: bold; padding-top : .5rem;"><h1>DA</h1></span>
+            <ul>
+                <li class="links"><a href="index.html">Home</a></li>
+                <li class="links"><a href="index.html">About</a></li>
+                <li class="links"><a href="index.html">Skills</a></li>
+                <li class="links"><a href="projects.html">Projects</a></li>
+                <li class="links"><a href="blogs.html">Blogs</a></li>
+                <li class="links"><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="blog">
+
+        <div class="blog-title">
+            <h3 style="margin : 0; font-size: 3rem; padding-bottom: .8rem;">Arrays in Javascript</h3>
+            <span><i>Published on Aug 14, 2021<br>
+                3 min read</i></span>
+        </div>
+
+        <div class="title-cover">
+            <img src="Images Blog2/cover.jfif">
+        </div>
+
+        <div class="blog-content">
+            <br>
+            <p>
+                Welcome back developers ! <Br><Br> If you are someone who just started programming then this is a must read blog for you.
+                <br><br>
+                In this blog , we will be covering <b>Arrays.</b>
+                <br>
+            </p>
+        </div>
+
+        <div>
+            <h3>What is an Array ?</h3>
+            <p>Array is a datastructure which is used to store multiple values in a single variable. (i.e : we can store more than one value at a time).</p>
+            <br>
+
+            <p>Consider a case , where you are supposed get all students name of a department. In this case you <b>can't create a separate variable</b> for storing each student name.
+            <br><br>
+            But what if you can create a variable of <b>dept_name</b> and have all the students name belonging to that department. Sounds cool right , this is the <b>concept</b> of arrays.
+            </p>
+        </div>
+
+        <div>
+            <h3>Syntax</h3>
+            
+            <div class="center"><img src="Images Blog2/arrayDeclaration.jpg"></div>
+            
+            <h3>Example:</h3>
+            
+            <div class="center"><img src="Images Blog2/eg.jpg"></div>
+
+            <p>Unlike C , C++ languages Javascript arrays can store values of <b>different datatypes</b> in a single array.</p>
+
+            <div class="center"><img src="Images Blog2/mix.jpg"></div>
+            <br>
+        </div>
+
+        <div>
+
+            <h3> Accessing the array elements </h3>
+
+            <p>The values of a array can be accessed using index. The index of an array starts from 0 to length of the array - 1.
+            <br><br>
+            ie: If you wanna access the first element of the array , then you need to mention the index value as 0.</p>
+
+            <h3>Syntax</h3>
+
+            <div class="center"><img src="Images Blog2/index.jpg"></div>
+
+            <p>
+                If you use a invalid index it would return undefined.
+                <br><br>
+                What if you do know the <b>size  of the array</b> ?
+            <br><br>
+            Array has a property which would return the length of the array.
+            <b>ie.array_name.length</b></p>
+            <br>            
+            
+            <div class="center"><img src="/Images Blog2/length.jpg"></div>
+
+        </div>
+
+        <div>            
+            <h3>Methods</h3>
+
+            <h3>1. push</h3>
+
+            <p>This method is used to <b>add elements</b> into the array . It adds the elements at the <b>end</b> of the array.</p>
+            
+           <div class="center"><img src="/Images Blog2/push.jpg"></div>
+
+            <br><br>
+
+            <h3>2. pop</h3>
+
+            <p>This method is used to <b>remove elements</b> from the <b>end</b> of the array.</p>
+            
+           <div class="center"><img src="/Images Blog2/pop.jpg"></div>
+
+            <br><br>
+
+            <h3>3. unshift</h3>
+
+            <p>This method is used to <b>add elements</b> in the <b>beginning</b> of the array.</p>
+            
+           <div class="center"><img src="/Images Blog2/unshift.jpg"></div>
+
+            <br><br>
+
+            <h3>4. shift</h3>
+
+            <p>This method is used to <b>remove elements</b> from the <b>beginning</b> of the array.</p>
+            
+            <div class="center"><img src="/Images Blog2/shift.jpg"></div>
+
+            <br><br>
+
+            <h3>5. indexOf</h3>
+
+            <p>This method returns the index(<b>ie.position of the element</b>) of element in the array. When there are duplicates it would return the <b>first occuring index.</b>
+            </p>
+
+            <div class="center"><img src="/Images Blog2/indexOf.jpg"></div>
+
+            <br><br>
+
+            <h3>6. splice</h3>
+
+            <p>This method takes two arguments one is <b>pos</b>(ie.position of the element to be removed) and other is <b>noOfElements</b> from that position to be removed;
+            </p>
+
+            <b>array_name.splice(pos , n);</b>
+
+            <div class="center"><img src="/Images Blog2/splice.jpg"></div>
+
+            <br><br>
+
+            <p>These are the basic array methods that are frequently used in programming.
+            <br><br>
+            If you wanna learn more about array methods , check this out :
+            <button class="secondary-btn btn"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Read more</a></button> 
+            </p>
+        </div>
+
+
+    </div>
+
+    <div class="center">© 2021 Devananth Nkl's Blog</div>
+</body>
+</html>

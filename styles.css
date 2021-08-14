@@ -117,7 +117,7 @@ body::-webkit-scrollbar{
 }
 
 .skill-card{
-    border : 1px solid black;
+    /* border : 1px solid black; */
     padding : 3rem;
     margin : 1rem;
     margin-left : 4rem;
@@ -231,7 +231,7 @@ body::-webkit-scrollbar{
     }
 
     .skill-card{
-        border : 1px solid black;
+        /* border : 1px solid1, 37, 37); */
         padding : .5rem;
         margin : .5rem;
         margin-left : 1rem;
@@ -248,6 +248,10 @@ body::-webkit-scrollbar{
 
     .mobile{
         display: none;
+    }
+
+    .btn{
+        margin-bottom: .4rem;;
     }
 }
 
