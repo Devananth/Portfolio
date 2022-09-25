@@ -57,7 +57,10 @@ body::-webkit-scrollbar{
     background: black;
     position : sticky;
     top : 0;
+}
 
+.line-height-2{
+    line-height: 2em;
 }
 
 #navbar{
@@ -95,10 +98,18 @@ body::-webkit-scrollbar{
     margin : auto;
 }
 
+.about-container{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .about-info{
     line-height : 2rem;
-    text-align: center;
+    text-align: left;
     font-size : 1.3rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-image{
